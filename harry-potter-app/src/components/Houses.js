@@ -11,7 +11,16 @@ const Houses = (props) => {
   }, [])
 
   return (
-    <House />
+    <>
+      {props.isFetching && <p>Loading......</p>}
+      <div className='houses'>
+        {props.houses.map(house => {
+          return (
+            <House key={house._id} house={house} />
+          )
+        })}
+      </div>
+    </>
   )
 }
 
@@ -23,6 +32,5 @@ const mapStateToProps = state => {
     error: state.houseReducer.error
   }
 }
-
 
 export default connect(mapStateToProps, {fetchHouses})(Houses);

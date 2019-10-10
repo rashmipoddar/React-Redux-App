@@ -7,7 +7,6 @@ import thunk from 'redux-thunk';
 
 import combineReducers from './reducers';
 
-import './index.css';
 import App from './App';
 
 const store = createStore(combineReducers, applyMiddleware(thunk, logger));
