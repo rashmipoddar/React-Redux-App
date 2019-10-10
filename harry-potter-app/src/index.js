@@ -11,7 +11,7 @@ import './index.css';
 import App from './App';
 
 const store = createStore(combineReducers, applyMiddleware(thunk, logger));
-console.log(store);
+// console.log('The store is ', store);
 
 ReactDOM.render(
   <Provider store={store}>
