@@ -1,1 +1,2 @@
-export { START_FETCHING, FETCH_SUCCESSFUL, FETCH_FAILED, fetchHouses } from './houseActions';
+export { START_FETCHING_HOUSES, FETCH_HOUSES_SUCCESSFUL, FETCH_HOUSES_FAILED, fetchHouses } from './houseActions';
+export { START_FETCHING_SPELLS, FETCH_SPELLS_SUCCESSFUL, FETCH_SPELLS_FAILED, fetchSpells } from './spellActions';

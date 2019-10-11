@@ -1,4 +1,4 @@
-import { START_FETCHING, FETCH_SUCCESSFUL, FETCH_FAILED } from '../actions';
+import { START_FETCHING_HOUSES, FETCH_HOUSES_SUCCESSFUL, FETCH_HOUSES_FAILED } from '../actions';
 
 const initialState = {
   isFetching: false,
@@ -8,18 +8,18 @@ const initialState = {
 
 export const houseReducer = (state = initialState, action) => {
   switch(action.type) {
-    case START_FETCHING :
+    case START_FETCHING_HOUSES :
       return {
         ...state, 
         isFetching: true,
       }
-    case FETCH_SUCCESSFUL : 
+    case FETCH_HOUSES_SUCCESSFUL : 
       return {
         ...state, 
         isFetching: false,
         houses: action.payload
       }
-    case FETCH_FAILED : 
+    case FETCH_HOUSES_FAILED : 
       return {
         ...state, 
         isFetching: false,
