@@ -1,0 +1,8 @@
+{
+    "version": 2,
+    "name": "harry-potter-app",
+    "builds": [{ "src": "harry-potter-app/package.json", "use": "@now/static-build", "config": {"distDir": "build"} }],
+    "routes": [
+        { "src": "/(.*)", "dest": "harry-potter-app/$1" }
+    ]
+}
