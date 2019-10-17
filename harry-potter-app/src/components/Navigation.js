@@ -7,6 +7,7 @@ const Navigation = () => {
       <Link to='/'>Home</Link>
       <Link to='/houses'>Houses</Link>
       <Link to='/spells'>Spells</Link>
+      <p>Welcome to Hogwarts School of Witchcraft and Wizardry. Its a school of magic where children are taught to be witches and wizards. </p>
     </div>
   )
 }
